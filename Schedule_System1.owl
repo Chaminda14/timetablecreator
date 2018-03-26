@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#"
+     xml:base="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-47="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Lecture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Lecture">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Lecturer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Meetings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Meetings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Tutorial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Do_Tutorial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Lecturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Lecturer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Meetings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Meetings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Tutor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Has_Tutor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Floor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Floor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall_Condition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall_Condition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_hall_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_hall_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturer_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturer_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Module_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Module_Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#No_of_Credits -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#No_of_Credits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#No_of_sheets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#No_of_sheets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Prefered_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Prefered_time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Seniority_level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Seniority_level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Programs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Facilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Facilities"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Facilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meeting_Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meeting_Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Facilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meetings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meetings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Programs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Programs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Tutorials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Tutorials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Programs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Tutors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Tutors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Bioinformatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Bioinformatics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <Lecture_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lecture</Lecture_type>
+        <Module_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioinformatics</Module_Name>
+        <No_of_Credits rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5</No_of_Credits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Boad_Room -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Boad_Room">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meeting_Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#CM_1110 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#CM_1110">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+        <Module_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematics and statistics</Module_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dean_office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dean_office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meeting_Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_A.Thushari_P_Silva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_A.Thushari_P_Silva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_B.L.D.Seneviratne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_B.L.D.Seneviratne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_C.R.J.Amalraj -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_C.R.J.Amalraj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_G.Upeksha_Ganegoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_G.Upeksha_Ganegoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_I.Thilini_S_Piyathilake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_I.Thilini_S_Piyathilake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_K.Subha_D_Fernando -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_K.Subha_D_Fernando">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_L.Ranathunga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_L.Ranathunga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_M.F.M.Firdhous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_M.F.M.Firdhous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_Sagara_N_Sumathipala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_Sagara_N_Sumathipala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_Supunmali_Ahangama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Dr_Supunmali_Ahangama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Faculty_Boad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Faculty_Boad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meetings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1310 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1310">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1320 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1320">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1400">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1610 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1610">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1620 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1620">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1900 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IN_1900">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1030 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1030">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1210 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#IS_1210">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Course_Modules"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Liason_Meeting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Liason_Meeting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Meetings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_A.A.P.S.Adikari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_A.A.P.S.Adikari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_B.H.Sudantha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_B.H.Sudantha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_C.P.Wijesiriwardane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_C.P.Wijesiriwardane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_Isuru_Nadeesha_Manawadu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_Isuru_Nadeesha_Manawadu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_P.M_Karunarathne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_P.M_Karunarathne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_S.C.Premaratne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_S.C.Premaratne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_T.M.Thanthiriwatta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mr_T.M.Thanthiriwatta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Champika_manel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Champika_manel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_G.T.I.Karunaratne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_G.T.I.Karunaratne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_K.A.Dilini_T_Kulawansa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_K.A.Dilini_T_Kulawansa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Kaushalya_Kumarasinghe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Kaushalya_Kumarasinghe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_M.P.Dhanushika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_M.P.Dhanushika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Priyanga_D_Thalagala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_Priyanga_D_Thalagala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_T.C.Sandanayake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_T.C.Sandanayake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_W.A.S.N.Wijetunge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_W.A.S.N.Wijetunge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_W.M.R.M.Weerasinghe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Mrs_W.M.R.M.Weerasinghe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Ms_G.T.Weerasuriya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Ms_G.T.Weerasuriya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Ms_M.B.Mufitha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Ms_M.B.Mufitha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_1LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_1LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_2LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_2LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_3LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_3LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_4LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#PHASE2_4LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Prof_A.S.Karunananda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Prof_A.S.Karunananda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Upeksha_Ganegoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Upeksha_Ganegoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecturers"/>
+        <Do_Lecture rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Bioinformatics"/>
+        <Lecturer_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dr. Upeksha Ganogoda</Lecturer_name>
+        <Seniority_level rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Top</Seniority_level>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#0LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#0LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <Floor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground</Floor>
+        <Lecture_Hall_Condition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non AC</Lecture_Hall_Condition>
+        <Lecture_hall_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0A</Lecture_hall_name>
+        <No_of_sheets rdf:datatype="http://www.w3.org/2001/XMLSchema#long">300</No_of_sheets>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#1LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#1LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+        <Floor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1st</Floor>
+        <Lecture_Hall_Condition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AC</Lecture_Hall_Condition>
+        <Lecture_hall_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1A</Lecture_hall_name>
+        <No_of_sheets rdf:datatype="http://www.w3.org/2001/XMLSchema#long">50</No_of_sheets>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#1LH02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#1LH02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#2LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#2LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#3LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#3LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#3LH02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#3LH02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#4LH01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#4LH01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#4LH02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#4LH02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/darshani/ontologies/2018/0/untitled-ontology-47#Lecture_Hall"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
